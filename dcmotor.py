@@ -13,7 +13,7 @@ try:
     for dc in reversed(range(0,100)):
       pwm.ChangeDutyCycle(dc)
       print(dc)
-      time.sleep(0.05)
+      time.sleep(0.012)
 except KeyboardInterrupt:
   print("bye")
 GPIO.cleanup() 
